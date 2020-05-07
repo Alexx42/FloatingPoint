@@ -8,21 +8,7 @@
 
 # define PARSE_ERROR "Syntax error: impossible to parse the number."
 
-# define FLOAT_ERROR "Float error: impossible to convert to float."
-
-
-# define ARCH_BITS 0x20
-
 # define POW32 0x100000000
-
-# define MASK_EXPOSANT 0x7F000000
-# define MASK_MANTICE 0x00FFFFFF
-
-# define GET_SIGN(x) ((x & POW32) >> 32)
-
-# define GET_EXPOSANT(x) ((x & MASK_EXPOSANT) >> 23)
-
-# define GET_MANTICE(x) ((x &  MASK_MANTICE) >> 15)
 
 typedef struct	s_float32 {
 	uint32_t	natural;
